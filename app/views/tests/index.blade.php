@@ -1,16 +1,16 @@
-<html>
-	
-	<head>
-	</head>
+@extends('layouts.master')
 
-	<body>
+@section('content')
+
+		<div class="create_container">
 		{{--{{ $tests->image }}
 		{{ $tests->profile }}--}}
-		<table>
+		<table id="first_profile">
 		<thead>
 		    <tr>
-		    <th>Image</th>
-		    <th>Profile</th>
+		    	<th>Image</th>
+		    	<th>Profile</th>
+			</tr>
 		</thead>
 		<tbody>
 		  @foreach($tests as $test)
@@ -20,6 +20,7 @@
 		    </tr>
 		  @endforeach
 		</table>
-		<div><a href="/tests/create">Create New Profile</a></div>
-	</body>
-</html>
+		<!-- Create Profile -->
+		<div id="New_Profile_Link"><a href="/tests/create"><img src="/assets/images/create_small.png" width="100" height="60">Your Profile</a></div>
+		</div>
+@stop

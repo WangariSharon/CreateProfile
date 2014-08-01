@@ -12,9 +12,12 @@
 
   </head>
   <body>
+    <header>CookieJar.net<img src="/assets/images/genie_aladdin_5.png" width="300" height="300"></header>
+    <div id="wrapper">
     <div class="container"> 
       
       @yield('content')
+    </div>
     </div>
 
   </body>

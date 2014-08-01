@@ -19,6 +19,81 @@ body {
 /*  background-image: url(../images/xQs90210-cast-party-01.jpg);
 */
 }
+/*Added Styles*/
+.create_container{
+  width: 1000px;
+  margin: 100px auto;
+
+}
+#first_profile{
+  border: solid 1px transparent;
+  margin: 0px 0px 0px 100px;
+}
+#first_profile tr th{
+  padding: 5px 50px;
+  border-right: solid 1px black;
+}
+#first_profile tr td{
+  padding: 20px 20px 20px 20px;
+  margin: 20px 0px 0px 0px;
+  border-right: solid 1px rgb(0,0,0);
+  color: rgb(139,0,139);
+}
+#first_profile tr{
+  margin-bottom: 20px;
+  border-bottom:solid 1px black; 
+}
+#New_Profile_Link{
+  text-decoration: none;
+  margin: 10px 0px 0px 100px;
+  font-size: 17px;
+  font-family: bodoni;
+}
+#New_Profile_Link a:hover{
+  color: rgb(139,0,139);
+  font-size: 24px;
+  text-decoration: none;
+  /*background: blue;*/
+}
+#New_Profile_Link img:hover{
+  background: rgb(139,0,139);
+}
+
+header{
+  height: 60px;
+  width: 100%;
+  background: rgb(0,0,0);
+  position: fixed;
+  z-index: 1000;
+  color: rgb(255,255,255);
+  text-align: right;
+  font-size: 30px;
+}
+#New_Profile_Link_Two{
+  text-decoration: none;
+  margin: 10px 0px 0px 0px;
+  font-size: 17px;
+  font-family: bodoni;
+}
+#New_Profile_Link_Two a:hover{
+  color: rgb(139,0,139);
+  font-size: 24px;
+  text-decoration: none;
+  /*background: blue;*/
+}
+#New_Profile_Link_Two img:hover{
+  background: rgb(139,0,139);
+}
+/*#New_Profile_Link_Two:after{
+  content: "Your Profile";
+}*/
+/*#New_Profile_Link:hover{
+  background-image: url(../images/create_small.png);
+}*/
+/*#wrapper{
+  width: 1000px;
+  margin: 0 auto;
+}*/
 article,
 aside,
 details,
@@ -2347,14 +2422,16 @@ output {
   color: #555555;
 }
 .form-control {
+  margin: 0px 0px;
   display: block;
-  width: 100%;
+  width: 600px;
   height: 34px;
-  padding: 6px 12px;
+  padding: 6px 20px;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
-  background-color: #ffffff;
+  background-color: rgba(139,139,139,0.2);
+  color: rgb(139,0,139);
   background-image: none;
   border: 1px solid #cccccc;
   border-radius: 4px;
@@ -2807,10 +2884,13 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
+  background-color: rgb(139,0,139);
   border-color: #357ebd;
 }
-.btn-primary:hover,
+.btn-primary:hover{
+  background-color: rgb(255,128,0);
+  color: rgb(0,0,0);
+}
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
